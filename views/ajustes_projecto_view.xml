@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="bkt_odoo_restart" model="ir.ui.view">
+            <field name="name">bkt_odoo_restart.form</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority">80</field>
+            <field name="inherit_id" ref="base.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='active_user_setting']" position="after">
+                    <div class="col-12 col-lg-6 o_setting_box" name="Modulo a Actualizar">
+                        <div class="o_setting_right_pane">
+                            <div class="o_widget">
+                                <p class="o_form_label" style="margin-bottom: 10px">Elegir el módulo a Actualizar antes de Reiniciar</p>
+                                <div class="d-flex">
+                                    <field name="modulo" placeholder='Nombre de la carpeta del módulo' style="width: 53%; margin-right: 7px;"/>
+                                    <button name="reiniciar_odoo_function" type="object" class="btn-primary">
+                                        <strong>Reiniciar y Actualizar 23</strong>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <h2>Control de Progreso</h2>
+                        <div class="row mt16 o_settings_container" name="project_time">
+                            <div class="col-12 col-lg-6 o_setting_box" name="project_time_management">
+                               <div>
+                                    <h3>Correo electrónico</h3>
+                                    <p>Dirección al que se enviará el aviso con las tareas que cumplan el %.</p>
+                                </div>
+                                <div >
+                                  <field name="email" placeholder='ejemplo@bakata.eu'/>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box" id="log_time_tasks_setting">
+                                <div>
+                                    <h3>Porcentaje</h3>
+                                    <p>Porcentaje que se tiene en cuenta para enviar los avisos.</p>
+                                </div>
+                                <div >
+                                  <field name="porcentaje" />
+                                </div>
+                            </div> 
+                        </div>                   -->
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+
+ 
